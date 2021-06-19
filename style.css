@@ -1,0 +1,226 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    font-family: serif;
+    background-color: #ccc;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 70px) repeat(1, 50px) repeat(1, 300px) repeat(1, 210px) repeat(1, 390px)  repeat(1, 50px);
+    grid-template-areas: 
+    'h h h h'
+    'm m m m'
+    'c c c d'
+    'c c c t'
+    'e e e g'
+    'e e e .'
+    'f f f f';
+}
+.header{
+    background-color: black;
+    grid-area: h;
+    position: sticky;
+    top: 0;
+}
+.header > h1 {
+    float: left;
+    color: #777788;
+    margin-left: 130px;
+    line-height: 70px;
+    cursor: pointer;
+}
+.header > h1:hover {
+    color: green;
+}
+.header  ul {
+    list-style: none;
+}
+.header ul li{
+    float: left;
+    line-height: 75px;
+}
+.header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left: 28px;
+    font-weight: 600;
+}
+.header ul li a:hover{
+    color: green;
+}
+.menu{
+    background-color: white;
+    grid-area: m;
+}
+.menu-row{
+    margin-left: 120px;
+    cursor: pointer;
+}
+.a1{
+    display: inline;
+    line-height: 50px;
+    margin-left: 10px;
+    color: #111;
+    font-weight: 200;
+    font-size: 17px;
+}
+.menu-row > a2{
+    font-weight: 500;
+}
+.menu-row :hover{
+    color: green;
+}
+.content{
+    background-color: white;
+    grid-area: c;
+    margin-left: 130px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.content h5{
+    margin-left: 30px;
+    padding-top: 40px;
+    font-size: 27px;
+}
+.content p{
+    margin-left: 30px;
+    padding-top: 5px;
+    line-height: 25px;
+    font-size: 18.8px;
+}
+.extra{
+    background-color:#ccc;
+    grid-area: e;
+    margin-left: 120px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.extra > div {
+    background-color: white;
+    font-size: 18px;
+    margin: 10px;
+    width: 260px;
+    color: black;
+}
+.extra img{
+    width: 260px;
+}
+.extra p{
+    padding: 5px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box > div {
+    background-color: green;
+    font-size: 18px;
+    margin: 10px;
+    margin-left: 30px;
+    padding: 13px;
+    width: 230px;
+    text-align: center;
+    color: white;
+}
+.tanlash{
+    padding-top: 15px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.tanlash1{
+    float: left;
+}
+.tanlash2{
+    float: left;
+    margin-left: 50px;
+}
+input{
+    width: 300px;
+    height: 33px;
+}
+.decontent{
+    background-color:white;
+    grid-area: d;
+    margin: 20px;
+}
+.b1{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(39, 39, 138);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px;   
+}
+.b2{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.b3{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(39, 39, 138);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px;
+}
+.third-content{
+    background-color: #fff;
+    grid-area: t;
+    margin: 20px;
+}
+.third-content h6{
+    font-size: 22px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.third-content p{
+    margin-left: 20px;
+    padding-top: 14px;
+}
+.third-content img{
+    float: left;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+a:link{
+    float: left;
+    text-decoration: none;
+    margin: 5px;
+}
+.g-content{
+    background-color: #fff;
+    grid-area: g;
+    margin: 20px;
+}
+.footer{
+    background-color: rgb(55, 40, 63);
+    grid-area: f;
+    margin-top: 25px;
+}
+.footer  ul {
+    list-style: none;
+}
+.footer ul li{
+    line-height: 50px;
+}
+.footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left: 130px;
+    font-size: 18px;
+}
+.footer ul li a:hover{
+    color: green;
+}
